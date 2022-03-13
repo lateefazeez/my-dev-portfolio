@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AppWrap from "../../wrapper/AppWrap";
 
 import { images } from "../../constants";
 
@@ -16,7 +17,7 @@ const scaleVariants = {
   },
 };
 
-export default function Header() {
+const Header = () => {
   return (
     <div id="home" className="app__header app__flex">
       <motion.div
@@ -66,4 +67,5 @@ export default function Header() {
       </motion.div>
     </div>
   );
-}
+};
+export default AppWrap(Header, "home");
