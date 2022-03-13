@@ -8,6 +8,7 @@ import api from "../assets/api.png";
 import asus from "../assets/asus.png";
 import bgIMG from "../assets/bgIMG.png";
 import bgWhite from "../assets/bgWhite.png";
+import bgOne from "../assets/bgone.png";
 import bolt from "../assets/bolt.png";
 import circle from "../assets/circle.svg";
 import cpp from "../assets/cpp.png";
@@ -51,6 +52,7 @@ export default {
   asus,
   bgIMG,
   bgWhite,
+  bgOne,
   bolt,
   circle,
   cpp,
