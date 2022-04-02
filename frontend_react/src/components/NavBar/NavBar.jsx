@@ -15,14 +15,19 @@ export default function NavBar() {
         <img src={images.logo} alt="page logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "testiomonials", "contact"].map(
-          (item) => (
-            <li className="app__flex p-text" key={`link-${item}`}>
-              <div />
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          )
-        )}
+        {[
+          "homeless",
+          "about",
+          "work",
+          "skills",
+          "testiomonials",
+          "contact",
+        ].map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <div />
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
       </ul>
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
