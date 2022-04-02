@@ -19,7 +19,7 @@ export default function NavBar() {
           (item) => (
             <li className="app__flex p-text" key={`link-${item}`}>
               <div />
-              <a href={`#{item}`}>{item}</a>
+              <a href={`#${item}`}>{item}</a>
             </li>
           )
         )}
@@ -33,9 +33,16 @@ export default function NavBar() {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul className="app__navbar-links">
-              {["home", "about", "contact", "work", "skills"].map((item) => (
+              {[
+                "home",
+                "about",
+                "work",
+                "skills",
+                "testiomonials",
+                "contact",
+              ].map((item) => (
                 <li className="app__flex p-text" key={`link-${item}`}>
-                  <a href={`#{item}`}>{item}</a>
+                  <a href={`#${item}`}>{item}</a>
                 </li>
               ))}
             </ul>
