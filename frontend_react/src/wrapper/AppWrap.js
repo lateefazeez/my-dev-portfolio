@@ -9,8 +9,8 @@ const AppWrap = (Component, idName, classNames) =>
         <div className="app__wrapper app__flex">
           <Component />
           <div className="copyright">
-            <p className="p-text">@2020 LateefAzeez</p>
-            <p className="p-text">All rights reserved</p>
+            <p className="p-text">@2022 LateefAzeez</p>
+            <p className="p-text">All Rights Reserved</p>
           </div>
         </div>
         <NavigationDots active={idName} />
